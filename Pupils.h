@@ -13,7 +13,7 @@ class Pupils {
         }
         void set_second_name(std::string pupil_second_name)//Установка фамилии
         {
-            second_name = pupil_last_name;
+            second_name = pupil_second_name;
         }
         std::string get_second_name()//Получение фамилии
         {
@@ -25,7 +25,7 @@ class Pupils {
                 scores[i] = pupil_scores[i];
             }
         }
-        void set_medium_mark(float mark)//Средний балл 
+        void set_medium_mark(float medium_mark)//Средний балл 
         {
             medium_mark = mark;
         }
