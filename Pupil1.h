@@ -1,7 +1,7 @@
 #include <string>
 using std::string;
 
-class Pupil //{
+class Pupil {
     public:
         void setName(std::string pupil_name)//Onoaiiaea eiaie
        // {
@@ -32,7 +32,7 @@ class Pupil //{
         float getMediumMark()//Iieo?aiea n?aaiaai aaeea 
        // {
             //return medium_mark;
-      //  }
+        }
     private:
         int scores[5];//Ioaiee
         float medium_mark; //N?aaiyy ioaiea
