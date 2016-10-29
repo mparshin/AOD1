@@ -1,5 +1,6 @@
 #include <iostream>
 #include "Pupil1.h"
+#include "Pupil1.cpp"
 
 int main()
 {
@@ -28,20 +29,11 @@ int main()
         std::cout << "Score " << i+1 << ": ";
         std::cin >> scores[i];
         sum += scores[i];// Сложение 
-    }
-
-	name = pupil_name;
-	return name;
-	second_name = pupil_second_name;
-	return second_name;
-	for (int i = 0; i < 5; ++i) {
-         scores[i] = pupil_scores[i];}
-		  medium_mark = mark;
-		   return medium_mark;   
+    }   
     pupil.setScores(scores);//Сохранение оценок 
     float medium_mark = sum / 5.0;// Подсчет средней оценки
     pupil.setMediumMark(medium_mark);// Средняя оценка
-    std::cout << "Medium mark of " << pupil.get_name() << " "
+    std::cout << "Medium mark of " << pupil.getName() << " "
          << pupil.getSecondName() << " is "
          << pupil.getMediumMark() << std::endl;//Итог данных по студенту
 
