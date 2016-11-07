@@ -1,13 +1,13 @@
 #include <string>
 using std::string;
 
-class Pupil {
+class Pupil1 {
     public:
-        void setName(std::string pupil_name);//Onoaiiaea eiaie
+        void setName(string pupil_name);//Onoaiiaea eiaie
        // {
             //name = pupil_name;
        // }
-        std::string getName();//Iieo?aiea eiaie
+        string getName();//Iieo?aiea eiaie
        // {
         //    //return name;
        // }
