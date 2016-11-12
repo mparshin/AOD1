@@ -1,44 +1,30 @@
 #include <iostream>
-#include "Pupil.h"
-using std::string;
+#include<stack>
+#include "Author.h"
+#include "Publisher.h"
+#include "Book.h"
+#include "Man.h"
 
-int main()
-{
-    Pupil pupil;
+using namespace std;
 
-    std::string name;
-    std::string second_name;
-
-    std::cin>>name;
-   
-    //std::cout << "Name: ";//Имя с клавиатуры
-    //getline(std::cin, name);
-
-    
-    // std::cout << "Second name: ";//Фамилия с клавиатуры
-	//getline(std::cin, second_name);
-
-	std::cin>>second_name;
-    pupil.setName(name);//Созранение имени и фамилии
-    pupil.setSecondName(second_name);
-
-    int scores[5];//Оценки
-    int sum = 0;//Сумма оценок 
-
-    // Ввод оценок
-    for (int i = 0; i < 5; ++i) {
-        std::cout << "Score " << i+1 << ": ";
-        std::cin >> scores[i];
-        sum += scores[i];// Сложение 
-    }
-
-    
-    pupil.setScores(scores);//Сохранение оценок 
-    float medium_mark = sum / 5.0;// Подсчет средней оценки
-    pupil.setMediumMark(medium_mark);// Средняя оценка
-    std::cout << "Medium mark of " << pupil.getName() << " "
-         << pupil.getSecondName() << " is "
-         << pupil.getMediumMark() << std::endl;//Итог данных по студенту
-
-    return 0;
+int main() {
+	setlocale(LC_ALL, "RUSSIAN");
+	int n;
+	stack<int>Mystack;
+	cout << "Введите количество книг, которые вы хотите занести в реестр:  ";
+	cin >> n;
+	Book *boo = new Book[n];
+		for (int i = 0; i < n; i++) {
+			cout << "========== " << i+1 << endl;
+				boo[i].setBook();
+			Mystack.push(boo[i].age);
+		}
+	//if (age >= 18) cout << name;
+			//Author aut;
+			Publisher pub;
+			//aut.setAuthor();
+			pub.setPublisher();
+		
+	system("pause");
+	return 0;
 }
