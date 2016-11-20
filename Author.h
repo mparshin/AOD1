@@ -8,17 +8,18 @@ using namespace std;
 
 class Author : Man
 {
-public:
+private:
 	string name;
 	string secondname;
 	string genre;
 	int publishdate;
+public:
 	void setAuthor() {
-		cout << "Àâòîð: " << endl;
+		cout << "Ã€Ã¢Ã²Ã®Ã°: " << endl;
 		setMan();
-		cout << "Ââåäèòå æàíð, â êîòîðîì ïèøåò àâòîð:";
+		cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã¦Ã Ã­Ã°, Ã¢ ÃªÃ®Ã²Ã®Ã°Ã®Ã¬ Ã¯Ã¨Ã¸Ã¥Ã² Ã Ã¢Ã²Ã®Ã°:";
 		cin >> genre;
-		cout << "Ââåäèòå ãîä ïóáëèêàöèè êíèãè: ";
+		cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã£Ã®Ã¤ Ã¯Ã³Ã¡Ã«Ã¨ÃªÃ Ã¶Ã¨Ã¨ ÃªÃ­Ã¨Ã£Ã¨: ";
 		cin >> publishdate;
 		cout << endl;
 	}
