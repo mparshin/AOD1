@@ -12,20 +12,22 @@ int main() {
 	int n;
 	int i;
 	stack<int>Mystack;
-	cout << "Ââåäèòå êîëè÷åñòâî êíèã, êîòîðûå âû õîòèòå çàíåñòè â ðååñòð:  ";
+	cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ ÃªÃ®Ã«Ã¨Ã·Ã¥Ã±Ã²Ã¢Ã® ÃªÃ­Ã¨Ã£, ÃªÃ®Ã²Ã®Ã°Ã»Ã¥ Ã¢Ã» ÃµÃ®Ã²Ã¨Ã²Ã¥ Ã§Ã Ã­Ã¥Ã±Ã²Ã¨ Ã¢ Ã°Ã¥Ã¥Ã±Ã²Ã°:  ";
 	cin >> n;
 	Book *boo = new Book[n];
 	for (int i = 0; i < n; i++) {
 		cout << "========== " << i + 1 << endl;
 		boo[i].setBook();
-		Mystack.push(boo[i].age);
-		if (boo[i].age >= 18) cout << "Êíèãà äëÿ ñîâåðøåííîëåòíèõ";
-		else cout << "Êíèãà äëÿ ìåëêèõ";
-		//Author aut;
+		cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð²Ð¾Ð·Ñ€Ð°ÑÑ‚:";
+		cin >> age;
+		boo[i].setAge(age);
+		Mystack.push(boo[i].getAge);
+		if (boo[i].getAge >= 18) cout << "   Â ÐšÐ½Ð¸Ð³Ð° Ð´Ð»Ñ ÑÐ¾Ð²ÐµÑ€ÑˆÐµÐ½Ð½Ð¾Ð»ÐµÑ‚Ð½Ð¸Ñ…    ";
+		else cout << "   ÐšÐ½Ð¸Ð³Ð° Ð´Ð»Ñ Ð¼Ð°Ð»Ñ‹ÑˆÐµÐ¹    ";
 		Publisher pub;
-		//aut.setAuthor();
 		pub.setPublisher();
 	}
+
 
 	
 	system("pause");
