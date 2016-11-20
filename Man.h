@@ -7,13 +7,14 @@ using namespace std;
 
 class Man
 {
-public:
+private:
 	string name;
 	string surname;
+public:
 	void setMan() {
-		cout << "Ââåäèòå èìÿ : ";
+		cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã¨Ã¬Ã¿ : ";
 		cin >> name;
-		cout << "Ââåäèòå ôàìèëèþ : ";
+		cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã´Ã Ã¬Ã¨Ã«Ã¨Ã¾ : ";
 		cin >> surname;
 	}
 };
