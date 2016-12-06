@@ -8,17 +8,18 @@ using namespace std;
 
 class Author : Man
 {
-public:
+private:
 	string name;
 	string secondname;
 	string genre;
 	int publishdate;
+public:
 	void setAuthor() {
-		cout << "Автор: " << endl;
+		cout << "Author info: " << endl;
 		setMan();
-		cout << "Введите жанр, в котором пишет автор:";
+		cout << "Enter genre of book:";
 		cin >> genre;
-		cout << "Введите год публикации книги: ";
+		cout << "Enter date of publish: ";
 		cin >> publishdate;
 		cout << endl;
 	}

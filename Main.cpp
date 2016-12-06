@@ -1,35 +1,32 @@
 #include <iostream>
-#include<stack>
 #include "Author.h"
 #include "Publisher.h"
 #include "Book.h"
 #include "Man.h"
+#include "Header.h"
 
 using namespace std;
 
 int main() {
 	setlocale(LC_ALL, "RUSSIAN");
-	int n;
-	int i;
-	int age;
-	stack<int>Mystack;
-	cout << "Введите количество книг, которые вы хотите занести в реестр:  ";
+	int n,age;
+	BookStack my_stack;
+	cout << "Enter number of books which you want to add to stack: ";
 	cin >> n;
 	Book *boo = new Book[n];
 	for (int i = 0; i < n; i++) {
 		cout << "========== " << i + 1 << endl;
 		boo[i].setBook();
-		cout << "Введите возраст:";
+		cout << "Enter age:";
 		cin >> age;
 		boo[i].setAge(age);
-		Mystack.push(boo[i].getAge);
-		if (boo[i].getAge >= 18) cout << "   Книга для совершеннолетних    ";
-		else cout << "   Книга для мелких    ";
-		//Author aut;
+		my_stack.push(boo[i]);
+		if (boo[i].getAge() >= 18) cout << "   В Book for adults    ";
+		else cout << "   Book for kids    ";
 		Publisher pub;
-		//aut.setAuthor();
 		pub.setPublisher();
 	}
+
 
 	
 	system("pause");

@@ -12,9 +12,9 @@ public:
 	string pubname;
 
 	void setPublisher() {
-		cout << "Директор издательства: " << endl;
+		cout << "Publish company director: " << endl;
 		setMan();
-		cout << "Введите название издательства: ";
+		cout << "Name of publish company: ";
 		cin >> pubname;
 	}
 };
