@@ -8,22 +8,27 @@ using namespace std;
 
 class Book 
 {
-public:
+private:
 	string genre;
 	string name;
-	string authorname;
-	string authorsurname;
+	Author author;
+	Publisher publisher;
 	int age;
+public:
+	void setAge(int a){
+		age=a;
+	}
+	int getAge(){
+		return age;
+	}
 	void setBook() {
-		cout << "Ââåäèòå íàçâàíèå êíèãè: ";
+		cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð°Ð·Ð²Ð°Ð½Ð¸Ðµ ÐºÐ½Ð¸Ð³Ð¸: ";
 		cin >> name;
-		cout << "Ââåäèòå æàíð: ";
+		cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¶Ð°Ð½Ñ€: ";
 		cin >> genre;
-		cout << "Ââåäèòå èìÿ àâòîðà: ";
-		cin >> authorname;
-		cout << "Ââåäèòå ôàìèëèþ àâòîðà: ";
-		cin >> authorsurname;
-		cout << "Ââåäèòå âîçðàñò, ñ êîòîðîãî ñòîèò ÷èòàòü êíèãó: ";
+		author.setAuthor();
+		publisher.setPublisher();
+		cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð²Ð¾Ð·Ñ€Ð°ÑÑ‚, Ñ ÐºÐ¾Ñ‚Ð¾Ñ€Ð¾Ð³Ð¾ ÑÑ‚Ð¾Ð¸Ñ‚ Ñ‡Ð¸Ñ‚Ð°Ñ‚ÑŒ ÐºÐ½Ð¸Ð³Ñƒ: ";
 		cin >> age;
 
 	}

@@ -12,9 +12,15 @@ private:
 	string surname;
 public:
 	void setMan() {
+<<<<<<< HEAD
 		cout << "Enter name : ";
 		cin >> name;
 		cout << "Enter surname  : ";
+=======
+		cout << "Ââåäèòå èìÿ : ";
+		cin >> name;
+		cout << "Ââåäèòå ôàìèëèþ : ";
+>>>>>>> origin/master
 		cin >> surname;
 	}
 };
