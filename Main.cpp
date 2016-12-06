@@ -11,6 +11,7 @@ int main() {
 	setlocale(LC_ALL, "RUSSIAN");
 	int n;
 	int i;
+	int age;
 	stack<int>Mystack;
 	cout << "¬ведите количество книг, которые вы хотите занести в реестр:  ";
 	cin >> n;
@@ -18,9 +19,12 @@ int main() {
 	for (int i = 0; i < n; i++) {
 		cout << "========== " << i + 1 << endl;
 		boo[i].setBook();
-		Mystack.push(boo[i].age);
-		if (boo[i].age >= 18) cout << " нига дл€ совершеннолетних";
-		else cout << " нига дл€ мелких";
+		cout << "¬ведите возраст:";
+		cin >> age;
+		boo[i].setAge(age);
+		Mystack.push(boo[i].getAge);
+		if (boo[i].getAge >= 18) cout << "    нига дл€ совершеннолетних    ";
+		else cout << "    нига дл€ мелких    ";
 		//Author aut;
 		Publisher pub;
 		//aut.setAuthor();
